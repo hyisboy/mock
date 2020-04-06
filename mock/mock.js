@@ -1,14 +1,11 @@
 /*
  * @Author: daiwei
  * @since: 2020-04-03 13:35:09
- * @lastTime: 2020-04-04 21:19:55
+ * @lastTime: 2020-04-04 21:56:20
  * @LastAuthor: Do not edit
  * @FilePath: /mock-test/mock/mock.js
  * @message: 
  */
-
-const 
- 
 const {
     mock
 } = require('mockjs');
@@ -29,10 +26,9 @@ exports.getAge = function () {
         'age|20-100': 100, // 返回 20-100 之间的年龄
     })
 }
-exports.getAges = function () {
-    // 返回的是一个数组
+exports.getSex = function () {
     return mock({
-        'age|1': [1, 2, 3, 4], // 返回 20-100 之间的年龄
+        'sex|1': ['男','女','动物'], // 随机返回 男 和 女， 概率 男 为 1/2
     })
 }
 /**
